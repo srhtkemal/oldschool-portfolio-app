@@ -131,6 +131,28 @@ p {
     background-color: black;
     opacity: 0.5;
 }
+.success-message,
+.failure-message {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: #32CD32; /* Başarı mesajı için yeşil renk */
+  color: #fff;
+  border-radius: 5px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.failure-message {
+  background-color: #FF0000; /* Başarısızlık mesajı için kırmızı renk */
+}
+
+.success-message.hide,
+.failure-message.hide {
+  opacity: 0;
+}
+
 
 #icerik{
     position: absolute;
