@@ -1,0 +1,160 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ebebeb;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #666;
+  margin: 0;
+}
+
+nav {
+  background-color: #ebebeb;
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #333;
+}
+
+main {
+  padding: 20px;
+  background-color: #fff;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  color: #666;
+  margin: 0 0 10px 0;
+}
+
+p {
+  line-height: 1.5;
+}
+
+#hakkinda {
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+#iletisim {
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+/* styles.css */
+
+#yorumlar {
+  margin-bottom: 20px;
+}
+
+#yorumlar h2 {
+  font-size: 24px;
+  color: #333;
+  margin: 0 0 10px 0;
+}
+
+#yorumlar-listesi {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+#yorumlar-listesi .comment {
+  margin-bottom: 10px;
+}
+
+#yorum-ekle-form {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+#yorum-ekle-form h3 {
+  font-size: 20px;
+  color: #333;
+  margin: 0 0 10px 0;
+}
+
+#yorum-ekle-form label {
+  font-weight: bold;
+}
+
+#yorum-ekle-form .form-control {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+#banner{
+    height:600px;
+    background-image: url("../images/image1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#black{
+    height: 600px;
+    background-color: black;
+    opacity: 0.5;
+}
+
+#icerik{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+}
+
+#yorum-ekle-form textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+#yorum-ekle-form button {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#yorum-ekle-form button:hover {
+  background-color: #45a049;
+}
