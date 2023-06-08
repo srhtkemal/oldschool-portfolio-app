@@ -97,7 +97,7 @@
       </section>
     </main>
 
-    <footer>
+    <footer id="footer">
       <p>It's an experimental site, if you see any problem about site please let me know <3 </p>
     </footer>
   </body>
