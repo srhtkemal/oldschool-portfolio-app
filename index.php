@@ -57,6 +57,8 @@
           serhaatkemal@gmail.com
           serhatkemal@ogr.bandirma.edu.tr
         </p>
+        <p>https://www.linkedin.com/in/srhtkemal/</p>
+        <p>https://github.com/srhtkemal</p>
       </section>
 
       <section id="yorumlar">
