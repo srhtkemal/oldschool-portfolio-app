@@ -1,5 +1,5 @@
 <?php
-// Veritabanı bağlantısı
+// DB Infos, We Used MYSQL 
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -7,16 +7,14 @@ $dbname = "serhatkemal";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Veritabanı bağlantısının başarısız olup olmadığını kontrol et
 if ($conn->connect_error) {
-    die("Veritabanı bağlantısı başarısız: " . $conn->connect_error);
+    die("DB Connection Failed" . $conn->connect_error);
 }
 
-// Yorumları veritabanından getir
 $sql = "SELECT * FROM yorumlar ORDER BY tarih DESC";
 $result = $conn->query($sql);
 
-// Yorumları göster
+
 if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
         $isim = $row['isim'];
@@ -30,9 +28,9 @@ if ($result->num_rows > 0) {
         echo "</div>";
     }
 } else {
-    echo "Henüz yorum yok.";
+    echo "You have No Comment Yet.";
 }
 
-// Veritabanı bağlantısını kapat
+
 $conn->close();
 ?>

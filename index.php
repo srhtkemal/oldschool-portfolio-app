@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Hakkımda</title>
-    <link rel="stylesheet" type="text/css" href="CSS/styles.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     <script src="script.js"></script>
   </head>
   <body>
@@ -54,7 +54,8 @@
       <section id="iletisim">
         <h2>Contact</h2>
         <p>
-          TODO: BURASI DOLDURULACAK
+          serhaatkemal@gmail.com
+          serhatkemal@ogr.bandirma.edu.tr
         </p>
       </section>
 
@@ -62,12 +63,12 @@
         <h2>Comments</h2>
         <div id="yorumlar-listesi">
           <?php
-            // Yorumları sorgula ve görüntüle
-            include 'yorumlari_goster.php';
+
+            include 'get_comments.php';
           ?>
         </div>
 
-        <form id="yorum-ekle-form" action="yorum_ekle.php" method="POST">
+        <form id="yorum-ekle-form" action="add_comment.php" method="POST">
           <h3>Leave a Comment</h3>
           <div>
             <label for="isim">Name:</label>
@@ -81,23 +82,23 @@
             />
           </div>
           <div>
-            <label for="mesaj">Mesajınız:</label>
+            <label for="mesaj">Your Comment</label>
             <textarea
               name="mesaj"
               id=""
               cols="20"
-              placeholder="Mesajınızı yazın"
+              placeholder="Your Comment"
               required
               class="form-control"
             ></textarea>
           </div>
-          <button type="submit" class="btn">Gönder</button>
+          <button type="submit" class="btn">Send</button>
         </form>
       </section>
     </main>
 
     <footer>
-      <p>&copy; 2023 Serhat Kemal</p>
+      <p>It's an experimental site, if you see any problem about site please let me know <3 </p>
     </footer>
   </body>
 </html>
